@@ -168,11 +168,37 @@ a:active {
     ---
     Creates a horizontal row with padding
 */
+.o-row {
+  padding: 1.5rem 1.5rem 0;
+  display: flow-root;
+}
+
+.o-row--primary {
+  background-color: hsl(198.0786026201, 100%, 40%);
+  color: white;
+}
+
+.o-row--dark {
+  background-color: hsl(198.0786026201, 10%, 10%);
+  color: white;
+}
+
+@media (min-width: 48.0625em) {
+  .o-row--xl {
+    padding: 3rem 3rem 1.5rem;
+  }
+}
+
 /*
     Objects: Container
     ---
     Creates a horizontal container that sets de global max-width
 */
+.o-container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
 /*
     Objects: Layout
     ---
