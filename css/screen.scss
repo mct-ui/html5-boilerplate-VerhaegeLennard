@@ -215,12 +215,22 @@ h1 {
   font-weight: 700;
   line-height: calc($baseline * 4);
   margin-bottom: $space-m;
+
+  @include mq(bp1) {
+    font-size: $ms9;
+    line-height: calc($baseline * 6);
+  }
+
+  @include mq(bp2) {
+    font-size: $ms11;
+    line-height: calc($baseline * 8);
+  }
 }
 
 h2 {
   font-weight: 700;
   font-size: $ms3;
-  line-height: calc($baseline * 3) ;
+  line-height: calc($baseline * 3);
   margin-bottom: $space-m;
 }
 
@@ -285,15 +295,20 @@ hr {
 }
 
 a {
-}
-
-a:hover {
+  color: $color-primary;
+  transition: .1s ease;
 }
 
 a:visited {
+  color: $color-primary;
+}
+
+a:hover {
+  color: $color-primary-light;
 }
 
 a:active {
+  color: $color-primary-dark;
 }
 
 /*---------------------------------------/*

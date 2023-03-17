@@ -64,6 +64,18 @@ h1 {
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
+@media (min-width: 36.0625em) {
+  h1 {
+    font-size: 2.8865075782rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 48.0625em) {
+  h1 {
+    font-size: 3.6532361537rem;
+    line-height: 4rem;
+  }
+}
 
 h2 {
   font-weight: 700;
@@ -129,6 +141,23 @@ hr {
   border: O;
   height: 1px;
   background: hsl(198.0786026201, 10%, 90%);
+}
+
+a {
+  color: hsl(198.0786026201, 100%, 40%);
+  transition: 0.1s ease;
+}
+
+a:visited {
+  color: hsl(198.0786026201, 100%, 40%);
+}
+
+a:hover {
+  color: hsl(198.0786026201, 100%, 50%);
+}
+
+a:active {
+  color: hsl(198.0786026201, 100%, 30%);
 }
 
 /*---------------------------------------/*
