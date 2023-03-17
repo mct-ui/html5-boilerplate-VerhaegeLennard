@@ -159,15 +159,22 @@ $breakpoints: (
 *:before,
 *:after {
   // Reset box-sizing
+  box-sizing: border-box;
 }
 
 * {
   // Reset margin and font-size and font-weight
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 100%;
+  font-weight: normal;
 }
 
 img {
   // make images block level elements
+  display: block;
   // make images responsive
+  max-width: 100%;
 }
 
 /*---------------------------------------/*
